@@ -38,8 +38,10 @@ from gamspy.math import cos, sin
 def fx(t):
     return sin(t) * cos(t - t * t)
 
-
+import sys
 def fy(t):
+    print('t =', t.__dict__)
+    sys.exit()
     return t * sin(t)
 
 
